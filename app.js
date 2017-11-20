@@ -1,26 +1,27 @@
-var x = 5;
+var m = "Multiply";
 
-var y = 2;
+var p = 2;
 
-var z = 4;
+var o = 4;
 
 
 function calculator(x,y,z) {
 	if (x=="Add") {
-		x + y;
+		return z + y;
 	}
 	else if (x=="Subtract") {
-		x - y;
+		return z - y;
 	}
 	else if (x=="Multiply") {
-		x * z;
+		return y * z;
 	}
 	else if (x=="Divide") {
-		x / z; 
+		return y / z; 
 	}
 	else {
-		output = "set a operator";
+		return output = "set a operator";
 	}
+
 }
-var output = calculator(x,y,z);
+var output = calculator(m,p,o);
 console.log(output);
